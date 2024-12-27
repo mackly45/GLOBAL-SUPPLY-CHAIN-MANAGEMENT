@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Supply Chain Management</title>
+
+    <!-- CSS Frameworks -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Logo de l'entreprise -->
+    <link rel="icon" href="logo-removebg-preview.png" type="image/png">
+
+</head>
+
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="MVsupply.html">
+                <img src="logo-removebg-preview.png" alt="Logo">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="MVsupply.html">
+                    <i class="fas fa-home"></i>Accueil
+                </a>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="services.html">
+                        <i class="fas fa-cogs"></i>Services
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item" href="transport.html"><i class="fas fa-truck-moving"></i>Transport</a>
+                        <a class="navbar-item" href="logistique.html"><i class="fas fa-warehouse"></i>Logistique</a>
+                        <a class="navbar-item" href="stock.html"><i class="fas fa-boxes"></i>Stock</a>
+                        <a class="navbar-item" href="international.html"><i class="fas fa-globe"></i>International</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="#expertise">
+                        <i class="fas fa-star"></i>Expertise
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item">Supply Chain</a>
+                        <a class="navbar-item">Optimisation</a>
+                        <a class="navbar-item">Consulting</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="#solutions">
+                        <i class="fas fa-lightbulb"></i>Solutions
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item">Pour PME</a>
+                        <a class="navbar-item">Pour Grands Comptes</a>
+                        <a class="navbar-item">Solutions Personnalisées</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <button class="button contact-button"><i class="fas fa-headset"></i>Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content text-center text-white">
+            <h1 class="main-title font-bold hero-text animate__animated animate__fadeInDown">
+                GLOBAL SUPPLY CHAIN MANAGEMENT
+            </h1>
+            <p class="subtitle-text hero-text animate__animated animate__fadeInUp">
+                L'EXPERTISE GLOBALE AU SERVICE DE VOTRE RÉUSSITE
+            </p>
+            <a href="services.html" class="btn btn-lg contact-button animate__animated animate__fadeInUp" id="discoverButton">
+                <i class="fas fa-route me-2"></i>Découvrir nos services
+            </a>
+        </div>
+    </section>
+
+    <!-- Notre Expertise Logistique Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="title has-text-centered mb-6">Notre Expertise Logistique</h2>
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="card h-100">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3" alt="Container port">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Container Port</h3>
+                            <div class="content hover-content">
+                                <p class="has-text-black is-size-6">Gestion efficace des opérations portuaires avec des équipements de pointe et une expertise reconnue dans la manutention des conteneurs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card h-100">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="38593081598d640c22f8ca34b6739e11.jpg" alt="Logistique maritime">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Logistique Maritime</h3>
+                            <div class="content hover-content">
+                                <p class="has-text-black is-size-6">Solutions de transport maritime international, avec suivi en temps réel et optimisation des routes maritimes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card h-100">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d" alt="Transport routier">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Transport Routier</h3>
+                            <div class="content hover-content">
+                                <p class="has-text-black is-size-6">Réseau de transport routier fiable et flexible, adapté à vos besoins de distribution nationale et internationale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="card h-100">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://images.unsplash.com/photo-1553413077-190dd305871c" alt="Entrepôt moderne">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4">Entrepôt Moderne</h3>
+                            <div class="content hover-content">
+                                <p class="has-text-black is-size-6">Installations d'entreposage à la pointe de la technologie avec systèmes de gestion automatisés et solutions de stockage innovantes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Approche Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered mb-4">Notre Approche</h2><br>
+            <p class="subtitle has-text-centered mb-6 has-text-white">Une méthodologie éprouvée pour garantir le succès de vos projets</p>
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="card h-100" style="background-color: var(--secondary-color);">
+                        <div class="card-content">
+                            <div class="is-flex is-align-items-center mb-4">
+                                <i class="fas fa-search fa-2x has-text-white mr-3"></i>
+                                <h3 class="title is-4 mb-0 has-text-white">Comprendre et analyser</h3>
+                            </div>
+                            <p class="has-text-white">Nous prenons le temps de comprendre votre contexte, vos enjeux et vos objectifs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card h-100" style="background-color: var(--secondary-color);">
+                        <div class="card-content">
+                            <div class="is-flex is-align-items-center mb-4">
+                                <i class="fas fa-lightbulb fa-2x has-text-white mr-3"></i>
+                                <h3 class="title is-4 mb-0 has-text-white">Concevoir et recommander</h3>
+                            </div>
+                            <p class="has-text-white">Nous élaborons des recommandations stratégiques et opérationnelles adaptées à votre situation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card h-100" style="background-color: var(--secondary-color);">
+                        <div class="card-content">
+                            <div class="is-flex is-align-items-center mb-4">
+                                <i class="fas fa-tasks fa-2x has-text-white mr-3"></i>
+                                <h3 class="title is-4 mb-0 has-text-white">Planifier et organiser</h3>
+                            </div>
+                            <p class="has-text-white">Nous définissons un plan d'action concret et mettons en place une organisation projet robuste.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card h-100" style="background-color: var(--secondary-color);">
+                        <div class="card-content">
+                            <div class="is-flex is-align-items-center mb-4">
+                                <i class="fas fa-cogs fa-2x has-text-white mr-3"></i>
+                                <h3 class="title is-4 mb-0 has-text-white">Exécuter et piloter</h3>
+                            </div>
+                            <p class="has-text-white">Nous pilotons la mise en œuvre du projet avec rigueur et agilité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card h-100" style="background-color: var(--secondary-color);">
+                        <div class="card-content">
+                            <div class="is-flex is-align-items-center mb-4">
+                                <i class="fas fa-chart-line fa-2x has-text-white mr-3"></i>
+                                <h3 class="title is-4 mb-0 has-text-white">Pérenniser et accompagner</h3>
+                            </div>
+                            <p class="has-text-white">Nous vous aidons à ancrer les changements dans votre organisation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card h-100" style="background-color: var(--secondary-color);">
+                        <div class="card-content">
+                            <div class="has-text-centered">
+                                <i class="fas fa-award fa-3x has-text-white mb-4"></i>
+                                <h3 class="title is-4 has-text-white">Notre Engagement</h3>
+                                <p class="has-text-white">Excellence, innovation et satisfaction client sont au cœur de notre démarche.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- equipe  -->
+    <section class="section" style="background-color: #ffffff;">
+        <div class="container">
+            <h2 class="title is-2 has-text-centered mb-6">Notre Équipe de Direction</h2>
+            <div class="columns is-multiline">
+                <div class="column is-6">
+                    <div class="card h-100" style="box-shadow: none; border: 1px solid #eee;">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-196x196">
+                                        <img class="is-rounded" src="boss.png" alt="Marius MAVOUNGOU" style="width: 196px; height: 196px; object-fit: cover;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-3">Marius MAVOUNGOU</p>
+                                    <p class="subtitle is-5">FOUNDER-CEO</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p style="color: black;">Dans un contexte de globalisation croissante des échanges, la maîtrise de l'ensemble des maillons de la Supply Chain est devenue un enjeu stratégique majeur pour les entreprises. De la gestion des approvisionnements à l'optimisation
+                                    du transport, en passant par les formalités douanières et la logistique internationale, chaque étape compte pour sécuriser les flux, réduire les coûts et gagner en compétitivité.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="card h-100" style="box-shadow: none; border: 1px solid #eee;">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-196x196">
+                                        <img class="is-rounded" src="bk.png" alt="Aimera KEKOLO" style="width: 196px; height: 196px; object-fit: cover;">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-3">Aimera KEKOLO</p>
+                                    <p class="subtitle is-5">DIRECTRICE GENERALE</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p style="color: black;">Dans un environnement économique de plus en plus interconnecté, où les barrières géographiques s'effacent et où la compétition s'intensifie, la performance des entreprises repose sur leur capacité à orchestrer efficacement
+                                    l'ensemble de leurs flux, qu'ils soient physiques, informationnels ou financiers. C'est pourquoi, au-delà de la maîtrise des opérations de Supply Chain, de commerce international, de logistique et de transit, il est
+                                    essentiel d'intégrer une vision stratégique de la gestion de projet et de la finance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------pourquoi nous choisir ------>
+    <section class="section" style="background-color: #2A2834;">
+        <div class="container">
+            <h2 class="title has-text-centered mb-6 has-text-white">Pourquoi Nous Choisir ?</h2>
+            <div class="columns is-multiline">
+                <div class="column is-4">
+                    <div class="has-text-centered" style="background: linear-gradient(rgba(42, 40, 52, 0.8), rgba(42, 40, 52, 0.8)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40') center/cover; padding: 3rem; border-radius: 10px;">
+                        <i class="fas fa-award fa-3x mb-4" style="color: var(--primary-color)"></i>
+                        <h3 class="title is-4 has-text-white">Expertise reconnue et multidisciplinaire</h3>
+                        <p class="has-text-white">Une expertise sectorielle approfondie combinée à des compétences fonctionnelles pointues.</p>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="has-text-centered" style="background: linear-gradient(rgba(42, 40, 52, 0.8), rgba(42, 40, 52, 0.8)), url('https://images.unsplash.com/photo-1552664730-d307ca884978') center/cover; padding: 3rem; border-radius: 10px;">
+                        <i class="fas fa-check-circle fa-3x mb-4" style="color: var(--primary-color)"></i>
+                        <h3 class="title is-4 has-text-white">Engagement qualité et satisfaction client</h3>
+                        <p class="has-text-white">Nous mettons tout en œuvre pour délivrer des prestations de haute qualité.</p>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="has-text-centered" style="background: linear-gradient(rgba(42, 40, 52, 0.8), rgba(42, 40, 52, 0.8)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c') center/cover; padding: 3rem; border-radius: 10px;">
+                        <i class="fas fa-bolt fa-3x mb-4" style="color: var(--primary-color)"></i>
+                        <h3 class="title is-4 has-text-white">Agilité et adaptabilité</h3>
+                        <p class="has-text-white">Nous construisons avec vous la réponse la plus adaptée à votre contexte.</p>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="has-text-centered" style="background: linear-gradient(rgba(42, 40, 52, 0.8), rgba(42, 40, 52, 0.8)), url('https://images.unsplash.com/photo-1529400971008-f566de0e6dfc') center/cover; padding: 3rem; border-radius: 10px;">
+                        <i class="fas fa-globe-americas fa-3x mb-4" style="color: var(--primary-color)"></i>
+                        <h3 class="title is-4 has-text-white">Réseau de partenaires international</h3>
+                        <p class="has-text-white">Un solide réseau de partenaires technologiques et locaux pour vous accompagner.</p>
+                    </div>
+                </div>
+
+                <div class="column is-6">
+                    <div class="has-text-centered" style="background: linear-gradient(rgba(42, 40, 52, 0.8), rgba(42, 40, 52, 0.8)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4') center/cover; padding: 3rem; border-radius: 10px;">
+                        <i class="fas fa-lightbulb fa-3x mb-4" style="color: var(--primary-color)"></i>
+                        <h3 class="title is-4 has-text-white">Culture de l'excellence et de l'innovation</h3>
+                        <p class="has-text-white">Nous visons en permanence le plus haut niveau de qualité et de performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: var(--secondary-color); color: white; padding: 3rem 0; display: flex; flex-direction: column; align-items: center;">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="has-text-centered">
+                        <img src="logo-removebg-preview.png" alt="Logo MV International" style="width: 100px; height: auto; margin-bottom: 1rem; display: inline-block; margin-right: 1rem;">
+                        <p class="has-text-white" style="display: inline-block;">MV International est une entreprise spécialisée dans la logistique.</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <h3 class="title is-4 has-text-white">Nos Adresses</h3>
+                    <a href="tel:+242 05 510 06 06" style="font-size: 1.5rem; font-weight: bold;">+242 05 510 06 06</a>
+                    <a href="mailto:secretariat@mvinternational.com" style="display: block;">secretariat@mvinternational.com</a>
+                    <a href="mailto:contactmvinternational@gmail.com" style="display: block;">contactmvinternational@gmail.com</a>
+                    <a href="www.mvinternational.com" style="display: block;">www.mvinternational.com</a>
+                </div>
+                <div class="column is-3">
+                    <h3 class="title is-4 has-text-white">Qui sommes-nous</h3>
+                    <p class="has-text-white">Nous sommes une équipe d'experts dédiés à offrir des solutions durables et efficaces pour la logistique.</p>
+                </div>
+                <div class="column is-3">
+                    <form action="mailto:secretariat@mvinternational.com" method="post" enctype="text/plain" style="max-width: 100%; margin: auto;">
+                        <div class="field">
+                            <label class="label" for="message">Envoyer un message</label>
+                            <div class="control">
+                                <textarea class="textarea" id="message" placeholder="Écrivez votre message ici..." style="height: 100px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <button type="submit" class="button is-link" style="background-color: var(--primary-color); color: white;">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-12">
+                    <hr style="border: 1px solid white; margin: 2rem 0;">
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-12">
+                    <p class="has-text-white has-text-centered">© 2024 MV INTERNATIONAL. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    < <script>
+        // Effet de défilement de la barre de navigation window.addEventListener('scroll', () => { const navbar = document.querySelector('.navbar'); if (window.scrollY > 50) { navbar.classList.add('has-background-white'); navbar.classList.remove('is-transparent');
+        } else { navbar.classList.remove('has-background-white'); navbar.classList.add('is-transparent'); } }); // Défilement fluide pour le bouton Découvrir document.getElementById('discoverButton').addEventListener('click', () => { window.scrollTo({
+        top: window.innerHeight, behavior: 'smooth' }); }); // Gestion du menu mobile document.addEventListener('DOMContentLoaded', () => { // Création du bouton burger const navbarBurger = document.createElement('a'); navbarBurger.setAttribute('role',
+        'button'); navbarBurger.className = 'navbar-burger'; navbarBurger.setAttribute('aria-label', 'menu'); navbarBurger.setAttribute('aria-expanded', 'false'); // Ajout des 3 barres du burger for (let i = 0; i
+        < 3; i++) { const span=d ocument.createElement( 'span'); span.setAttribute( 'aria-hidden', 'true'); navbarBurger.appendChild(span); } // Ajout du burger au DOM document.querySelector( '.navbar-brand').appendChild(navbarBurger); // Gestion du clic sur
+            le burger navbarBurger.addEventListener( 'click', ()=> { navbarBurger.classList.toggle('is-active'); document.querySelector('.navbar-menu').classList.toggle('is-active'); }); });
+
+            </script>
+
+            <!-- Bootstrap JS and Popper.js -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

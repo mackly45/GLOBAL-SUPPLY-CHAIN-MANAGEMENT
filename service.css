@@ -1,0 +1,222 @@
+                                                     :root {
+                                                --primary-color: #E6423F;
+                                                --secondary-color: #2A2834;
+                                                --accent-color: #E6423F;
+                                            }
+                                            
+                                            .hero-section {
+                                                position: relative;
+                                                height: 80vh;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                overflow: hidden;
+                                                background: var(--secondary-color);
+                                            }
+                                            
+                                            .hero-overlay {
+                                                position: absolute;
+                                                inset: 0;
+                                                z-index: 10;
+                                            }
+                                            
+                                            .hero-bg {
+                                                position: absolute;
+                                                inset: 0;
+                                                background: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3') center/cover;
+                                            }
+                                            
+                                            .service-card {
+                                                background: white;
+                                                border-radius: 0.75rem;
+                                                overflow: hidden;
+                                                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                                                transition: all 0.3s;
+                                            }
+                                            
+                                            .service-card:hover {
+                                                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+                                            }
+                                            
+                                            .service-image {
+                                                height: 12rem;
+                                                position: relative;
+                                                overflow: hidden;
+                                            }
+                                            
+                                            .service-image img {
+                                                width: 100%;
+                                                height: 100%;
+                                                object-fit: cover;
+                                                transition: transform 0.5s;
+                                            }
+                                            
+                                            .service-card:hover .service-image img {
+                                                transform: scale(1.1);
+                                            }
+                                            
+                                            .service-icon {
+                                                position: absolute;
+                                                left: 1.5rem;
+                                                top: 0;
+                                                background: var(--primary-color);
+                                                color: white;
+                                                padding: 1rem;
+                                                border-radius: 0.75rem;
+                                                transform: translateY(-50%);
+                                                transition: transform 0.3s;
+                                            }
+                                            
+                                            .service-card:hover .service-icon {
+                                                transform: translateY(-50%) scale(1.1);
+                                            }
+                                            
+                                            .trust-card {
+                                                text-align: center;
+                                                padding: 1.5rem;
+                                                background: white;
+                                                border-radius: 0.75rem;
+                                                transition: box-shadow 0.3s;
+                                            }
+                                            
+                                            .trust-card:hover {
+                                                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+                                            }
+                                            
+                                            .trust-icon {
+                                                width: 4rem;
+                                                height: 4rem;
+                                                margin: 0 auto 1.5rem;
+                                                background: rgba(239, 68, 68, 0.1);
+                                                border-radius: 9999px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                color: var(--primary-color);
+                                            }
+                                            
+                                            .animate-fade-up {
+                                                opacity: 0;
+                                                transform: translateY(20px);
+                                                animation: fadeUp 0.5s ease forwards;
+                                            }
+                                            
+                                            @keyframes fadeUp {
+                                                to {
+                                                    opacity: 1;
+                                                    transform: translateY(0);
+                                                }
+                                            }
+                                            
+                                            .navbar-menu {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                            }
+                                            
+                                            .navbar-start {
+                                                margin: 0 auto;
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .navbar-end {
+                                                position: absolute;
+                                                right: 20px;
+                                            }
+                                            
+                                            .navbar-item i {
+                                                margin-right: 8px;
+                                                font-size: 1.1em;
+                                                transition: transform 0.3s ease;
+                                            }
+                                            
+                                            .navbar-item:hover i {
+                                                transform: translateY(-2px);
+                                            }
+                                            
+                                            .navbar-item {
+                                                color: black !important;
+                                                transition: all 0.3s ease;
+                                                position: relative;
+                                            }
+                                            
+                                            .navbar-item::after {
+                                                content: '';
+                                                position: absolute;
+                                                bottom: 0;
+                                                left: 0;
+                                                width: 0;
+                                                height: 2px;
+                                                background-color: var(--primary-color);
+                                                transition: width 0.3s ease;
+                                            }
+                                            
+                                            .navbar-item:hover::after {
+                                                width: 100%;
+                                            }
+                                            
+                                            .dropdown-content {
+                                                display: none;
+                                                position: absolute;
+                                                background: var(--secondary-color);
+                                                min-width: 200px;
+                                                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                                                z-index: 100;
+                                                border-radius: 4px;
+                                                transform-origin: top;
+                                                animation: dropdownFade 0.3s ease;
+                                                top: 100%;
+                                                left: 0;
+                                            }
+                                            
+                                            @keyframes dropdownFade {
+                                                from {
+                                                    opacity: 0;
+                                                    transform: translateY(-10px);
+                                                }
+                                                to {
+                                                    opacity: 1;
+                                                    transform: translateY(0);
+                                                }
+                                            }
+                                            
+                                            .navbar-item.has-dropdown:hover .dropdown-content {
+                                                display: block;
+                                            }
+                                            
+                                            .dropdown-content .navbar-item {
+                                                color: white !important;
+                                                transition: all 0.3s ease;
+                                                padding: 0.5rem 1rem;
+                                            }
+                                            
+                                            .dropdown-content .navbar-item:hover {
+                                                background-color: var(--primary-color) !important;
+                                                padding-left: 1.5rem;
+                                            }
+                                            
+                                            .contact-button {
+                                                background-color: var(--primary-color) !important;
+                                                color: white !important;
+                                                transition: all 0.3s ease;
+                                            }
+                                            
+                                            .contact-button:hover {
+                                                background-color: var(--secondary-color) !important;
+                                                color: white !important;
+                                            }
+                                            
+                                            @media screen and (max-width: 768px) {
+                                                .navbar-menu {
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    background: var(--secondary-color);
+                                                    z-index: 1000;
+                                                    display: none;
+                                                }
+                                                .navbar-menu.is-active {
+                                                    display: block;
+                                                }
+                                                .navbar-start {
+                                                    flex-direction: column;

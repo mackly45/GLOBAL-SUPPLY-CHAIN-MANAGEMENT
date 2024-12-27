@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Supply Chain Management</title>
+
+    <!-- CSS Frameworks -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="transpot.css">
+
+    <!-- Logo de l'entreprise -->
+    <link rel="icon" href="logo-removebg-preview.png" type="image/png">
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="MVsupply.html">
+                <img src="logo-removebg-preview.png" alt="Logo">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="MVsupply.html">
+                    <i class="fas fa-home"></i>Accueil
+                </a>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="services.html">
+                        <i class="fas fa-cogs"></i>Services
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item" href="transport.html"><i class="fas fa-truck-moving"></i>Transport</a>
+                        <a class="navbar-item" href="logistique.html"><i class="fas fa-warehouse"></i>Logistique</a>
+                        <a class="navbar-item" href="stock.html"><i class="fas fa-boxes"></i>Stock</a>
+                        <a class="navbar-item" href="international.html"><i class="fas fa-globe"></i>International</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="#expertise">
+                        <i class="fas fa-star"></i>Expertise
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item">Supply Chain</a>
+                        <a class="navbar-item">Optimisation</a>
+                        <a class="navbar-item">Consulting</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="#solutions">
+                        <i class="fas fa-lightbulb"></i>Solutions
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item">Pour PME</a>
+                        <a class="navbar-item">Pour Grands Comptes</a>
+                        <a class="navbar-item">Solutions Personnalisées</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <button class="button contact-button"><i class="fas fa-headset"></i>Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-up">
+            <h1 class="display-4 fw-bold mb-4">Solutions de Transport Global</h1>
+            <p class="lead mb-4">Des solutions de transport multimodal adaptées à vos besoins logistiques</p>
+            <button class="btn btn-primary btn-lg">Demander un devis</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="display-5 fw-bold text-secondary">Nos Solutions de Transport</h2>
+                <div class="mx-auto" style="width: 80px; height: 3px; background: var(--primary);"></div>
+                <p class="text-muted mt-3">Une gamme complète de services de transport pour répondre à tous vos besoins</p>
+            </div>
+            <div class="row g-4" id="services-container">
+                <!-- Services will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-secondary text-white">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="display-5 fw-bold">Pourquoi Choisir Nos Services ?</h2>
+                <div class="mx-auto" style="width: 80px; height: 3px; background: var(--primary);"></div>
+                <p class="text-light mt-3">Une expertise reconnue dans le transport international</p>
+            </div>
+            <div class="row g-4" id="features-container">
+                <!-- Features will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center fade-up">
+            <h2 class="display-5 fw-bold mb-4">Prêt à Optimiser Votre Logistique ?</h2>
+            <p class="lead mb-4">Contactez nos experts pour une solution personnalisée</p>
+            <button class="btn btn-light btn-lg">Contactez-nous</button>
+        </div>
+    </section>
+
+    <script>
+        // Data
+        const transportServices = [{
+            icon: 'fa-ship',
+            title: 'Transport Maritime',
+            description: 'Solutions de transport maritime international avec suivi en temps réel.',
+            features: ['Fret maritime', 'Gestion des conteneurs', 'Routes optimisées', 'Suivi en temps réel'],
+            image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3'
+        }, {
+            icon: 'fa-truck',
+            title: 'Transport Routier',
+            description: 'Service de transport routier national et international avec une flotte moderne et des chauffeurs expérimentés.',
+            features: ['Livraison express', 'Transport frigorifique', 'Groupage', 'Distribution urbaine'],
+            image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3'
+        }, {
+            icon: 'fa-plane',
+            title: 'Transport Aérien',
+            description: 'Solutions de fret aérien pour vos envois urgents et sensibles avec une couverture mondiale.',
+            features: ['Fret express', 'Charter avion', 'Transport sensible', 'Douane express'],
+            image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3'
+        }, {
+            icon: 'fa-train',
+            title: 'Transport Ferroviaire',
+            description: 'Transport ferroviaire écologique et efficace pour vos marchandises sur longue distance.',
+            features: ['Transport combiné', 'Wagons dédiés', 'Trains complets', 'Multi-modal'],
+            image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3'
+        }];
+
+        const features = [{
+                icon: 'fa-route',
+                title: 'Réseau International',
+                description: 'Couverture mondiale avec des partenaires de confiance'
+            },
+            // Add other features
+        ];
+
+        // Render functions
+        function renderServices() {
+            const container = document.getElementById('services-container');
+            transportServices.forEach((service, index) => {
+                        const col = document.createElement('div');
+                        col.className = 'col-md-6 fade-up';
+                        col.style.animationDelay = `${index * 0.2}s`;
+                        col.innerHTML = `
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="${service.image}" alt="${service.title}">
+                            <div class="image-overlay">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="fas ${service.icon} fa-2x"></i>
+                                    <h3 class="h4 mb-0">${service.title}</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-muted mb-4">${service.description}</p>
+                            <div class="feature-grid">
+                                ${service.features.map(feature => `
+                                    <div class="feature-item">
+                                        <div class="feature-dot"></div>
+                                        <span>${feature}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(col);
+            });
+        }
+
+        function renderFeatures() {
+            const container = document.getElementById('features-container');
+            features.forEach((feature, index) => {
+                const col = document.createElement('div');
+                col.className = 'col-md-3 fade-up';
+                col.style.animationDelay = `${index * 0.1}s`;
+                col.innerHTML = `
+                    <div class="features-card">
+                        <div class="feature-icon">
+                            <i class="fas ${feature.icon} fa-2x"></i>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">${feature.title}</h3>
+                        <p class="text-light-50">${feature.description}</p>
+                    </div>
+                `;
+                container.appendChild(col);
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderServices();
+            renderFeatures();
+        });
+    </script>
+</body>
+
+</html>
+Last edited il y a 3 minutes

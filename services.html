@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Supply Chain Management</title>
+
+    <!-- CSS Frameworks -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="service.css">
+
+    <!-- Logo de l'entreprise -->
+    <link rel="icon" href="logo-removebg-preview.png" type="image/png">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="logo-removebg-preview.png" alt="Logo">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="MVsupply.html">
+                    <i class="fas fa-home"></i>Accueil
+                </a>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="services.html">
+                        <i class="fas fa-cogs"></i>Services
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item" href="transport.html"><i class="fas fa-truck-moving"></i>Transport</a>
+                        <a class="navbar-item" href="logistique.html"><i class="fas fa-warehouse"></i>Logistique</a>
+                        <a class="navbar-item" href="stock.html"><i class="fas fa-boxes"></i>Stock</a>
+                        <a class="navbar-item" href="international.html"><i class="fas fa-globe"></i>International</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="#expertise">
+                        <i class="fas fa-star"></i>Expertise
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item">Supply Chain</a>
+                        <a class="navbar-item">Optimisation</a>
+                        <a class="navbar-item">Consulting</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown">
+                    <a class="navbar-item" href="#solutions">
+                        <i class="fas fa-lightbulb"></i>Solutions
+                    </a>
+                    <div class="dropdown-content">
+                        <a class="navbar-item">Pour PME</a>
+                        <a class="navbar-item">Pour Grands Comptes</a>
+                        <a class="navbar-item">Solutions Personnalisées</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <button class="button contact-button"><i class="fas fa-headset"></i>Contactez-nous</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="min-h-screen bg-gradient-to-b from-gray-800 to-gray-900"></div>
+    <nav class="bg-white shadow-lg">
+        <!-- Add your navbar content here -->
+    </nav>
+
+    <main class="pt-20">
+        <section class="hero-section" style="background-color: #2A2834;">
+            <div class="hero-overlay"></div>
+            <div class="hero-bg"></div>
+            <div class="container position-relative z-20 text-center animate-fade-up">
+                <h1 class="display-4 text-white fw-bold mb-4">Nos Services</h1>
+                <p class="lead text-white mx-auto" style="max-width: 32rem; color: #E6423F;">
+                    Des solutions logistiques intégrées pour votre succès global
+                </p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-4" id="services-grid">
+                    <!-- Services will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-white">
+            <div class="container">
+                <div class="text-center mb-5 animate-fade-up">
+                    <h2 class="display-5 text-secondary fw-bold mb-4">
+                        Pourquoi Nous Faire Confiance ?
+                    </h2>
+                    <p class="text-muted mx-auto" style="max-width: 48rem;">
+                        Notre expertise, notre engagement et notre réseau international font de nous votre partenaire idéal pour tous vos besoins logistiques.
+                    </p>
+                </div>
+                <div class="row g-4" id="trust-grid">
+                    <!-- Trust cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+    <!-- Footer -->
+    <footer class="footer" style="background-color: var(--secondary-color); color: white; padding: 3rem 0; display: flex; flex-direction: column; align-items: center;">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column is-3">
+                    <div class="has-text-centered">
+                        <img src="logo-removebg-preview.png" alt="Logo MV International" style="width: 100px; height: auto; margin-bottom: 1rem; display: inline-block; margin-right: 1rem;">
+                        <p class="has-text-white" style="display: inline-block;">MV International est une entreprise spécialisée dans la logistique.</p>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <h3 class="title is-4 has-text-white">Nos Adresses</h3>
+                    <a href="tel:+242 05 510 06 06" style="font-size: 1.5rem; font-weight: bold;">+242 05 510 06 06</a>
+                    <a href="mailto:secretariat@mvinternational.com" style="display: block;">secretariat@mvinternational.com</a>
+                    <a href="mailto:contactmvinternational@gmail.com" style="display: block;">contactmvinternational@gmail.com</a>
+                    <a href="www.mvinternational.com" style="display: block;">www.mvinternational.com</a>
+                </div>
+                <div class="column is-3">
+                    <h3 class="title is-4 has-text-white">Qui sommes-nous</h3>
+                    <p class="has-text-white">Nous sommes une équipe d'experts dédiés à offrir des solutions durables et efficaces pour la logistique.</p>
+                </div>
+                <div class="column is-3">
+                    <form action="mailto:secretariat@mvinternational.com" method="post" enctype="text/plain" style="max-width: 100%; margin: auto;">
+                        <div class="field">
+                            <label class="label" for="message">Envoyer un message</label>
+                            <div class="control">
+                                <textarea class="textarea" id="message" placeholder="Écrivez votre message ici..." style="height: 100px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <button type="submit" class="button is-link" style="background-color: var(--primary-color); color: white;">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-12">
+                    <hr style="border: 1px solid white; margin: 2rem 0;">
+                </div>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-12">
+                    <p class="has-text-white has-text-centered">© 2024 MV INTERNATIONAL. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const services = [{
+
+                title: 'Transport & Logistique',
+                description: 'Solutions de transport routier, maritime et aérien adaptées à vos besoins. Suivi en temps réel et optimisation des itinéraires pour une gestion efficace.',
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
+                backgroundColor: '#E6423F'
+            }, {
+
+                title: 'Stockage & Gestion des Inventaires',
+                description: 'Entrepôts sécurisés et gestion des stocks en temps réel grâce à nos systèmes automatisés. Maximisez votre espace et réduisez vos coûts.',
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
+                backgroundColor: '#E6423F'
+            }, {
+
+                title: 'Commerce International',
+                description: 'Expertise en douanes, conformité réglementaire et stratégies d\'import/export pour accompagner votre expansion globale.',
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
+                backgroundColor: '#E6423F'
+            }, {
+
+                title: 'Digitalisation des Opérations',
+                description: 'Intégrez des solutions numériques pour une gestion simplifiée et efficace de vos processus logistiques et administratifs.',
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
+                backgroundColor: '#E6423F'
+            }, {
+
+                title: 'Gestion de Projet',
+                description: 'Planification, coordination et exécution de projets complexes avec un suivi précis pour garantir le succès.',
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
+                backgroundColor: '#E6423F'
+            }, {
+
+                title: 'Services Personnalisés',
+                description: 'Conception de solutions sur mesure pour répondre aux besoins spécifiques de chaque client, quelle que soit leur industrie.',
+                image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d',
+                backgroundColor: '#E6423F'
+            },
+            // Add other services here
+        ];
+
+        const trustItems = [{
+                icon: 'fa-building',
+                title: 'Infrastructure Mondiale',
+                description: 'Présence internationale et réseau logistique étendu'
+            }, {
+                icon: 'fa-cogs',
+                title: 'Solutions Complètes',
+                description: 'De la conception à l\'exécution, nous gérons tout'
+            }, {
+                icon: 'fa-users',
+                title: 'Équipe Experte',
+                description: 'Professionnels qualifiés à votre service'
+            },
+            // Add other trust items here
+        ];
+
+        function createServiceCards() {
+            const grid = document.getElementById('services-grid');
+            services.forEach((service, index) => {
+                const delay = index * 100;
+                const card = document.createElement('div');
+                card.className = 'col-md-6 col-lg-4 animate-fade-up';
+                card.style.animationDelay = `${delay}ms`;
+                card.innerHTML = `
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="${service.image}" alt="${service.title}">
+                            <div class="service-icon">
+                                <i class="fas ${service.icon} fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="h5 fw-bold text-secondary mb-3">${service.title}</h3>
+                            <p class="text-muted">${service.description}</p>
+                            <button class="btn btn-primary mt-3" style="background-color: var(--primary-color);">En savoir plus</button>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function createTrustCards() {
+            const grid = document.getElementById('trust-grid');
+            trustItems.forEach((item, index) => {
+                const delay = index * 200;
+                const card = document.createElement('div');
+                card.className = 'col-md-4 animate-fade-up';
+                card.style.animationDelay = `${delay}ms`;
+                card.innerHTML = `
+                    <div class="trust-card">
+                        <div class="trust-icon">
+                            <i class="fas ${item.icon} fa-2x"></i>
+                        </div>
+                        <h3 class="h5 fw-bold text-secondary mb-3">${item.title}</h3>
+                        <p class="text-muted">${item.description}</p>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            createServiceCards();
+            createTrustCards();
+        });
+    </script>
+</body>
+
+</html>
